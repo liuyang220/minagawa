@@ -92,7 +92,7 @@ body {
 #menu { display:none; }
 #menu a { font-family:gothamMed; font-size:1.5em; padding:20px 0; display:block; text-decoration: none; color:#40606b; text-align: center; outline: none; text-transform: uppercase; }
 #menu a:first-child { margin-top:15%; }
-#menu a:hover { text-decoration: line-through;}
+#menu a:hover { font-weight: bolder;}
 
 
 

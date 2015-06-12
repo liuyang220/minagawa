@@ -84,13 +84,13 @@ body {
 #nav-toggle.active span:before { transform: rotate(45deg); background:#40606b; }
 #nav-toggle.active span:after { transform: rotate(-45deg); background:#40606b; }
 
-#container { width:100%; height:100vh; }
+#container { width:100%; height:auto; }
 #container a { outline:none; }
 #menu { display:none; }
 #menu a { font-family:gothamMed; font-size:1.5em; padding:20px 0; display:block; text-decoration: none; color:#40606b; text-align: center; outline: none; text-transform: uppercase; }
 #menu a:first-child { margin-top:15%; }
 #menu a:hover { font-weight: bolder;}
-#logo { position: relative; left:50%; top:50%; margin:-123.5px 0 0 -90px; }
+#logo { position: relative; left:50%; top:50%; margin:200px 0 0 -90px; }
 
 
 

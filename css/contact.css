@@ -111,13 +111,13 @@ hr { width:10%; height:8px; background:#456770; border:0; margin: 0 auto;}
 #contact-icons .icons a:hover { text-decoration: underline; }
 #form-container { max-width: 1240px; height:auto; background: white; margin:0 auto 100px; padding:30px; box-sizing:border-box;}
 #form-container .formbox { width:100%; height:auto; padding:15px; background:#40606b; box-sizing:border-box; }
-#form-container .formbox .form-intro { width: 40%; height:auto; float:left; text-align: left; }
+#form-container .formbox .form-intro { width: 40%; height:auto; float:left; text-align: left; padding-right:20px; box-sizing:border-box; }
 #form-container .formbox .form-intro h1 { font-family: bebas; font-size: 2em; }
 #form-container .formbox .form-intro h3 { font-family: gothamLight; }
 #form-container .formbox form { width:60%; height:auto; float:left; text-align: left; padding-left: 50px; box-sizing:border-box; border-left: solid white 2px; }
 #form-container .formbox form input[type=text],input[type=email] { width:80%; height:30px; font-family: gothamMed; border:none; border-radius: 5px; outline: none; margin-bottom:20px; padding:5px; box-sizing:border-box;}
-#form-container .formbox form textarea { width:80%; height:100px; resize:none; outline:none; border-radius: 5px; border:none; }
-#form-container .formbox form input[type=submit] { background: url(../img/form-button.png) no-repeat; border: 0; height: 57px; width: 57px; margin:50px 20% 0 0; float:right;}
+#form-container .formbox form textarea { width:80%; height:100px; resize:none; outline:none; border-radius: 5px; border:none; font-family: gothamMed; padding:5px; box-sizing:border-box; }
+#form-container .formbox form input[type=submit] { background: url(../img/form-button.png) no-repeat; border: 0; height: 57px; width: 57px; margin:50px 20% 0 0; float:right; outline: none; }
 
 #footer { width:100%; height:auto; background: #231f20; text-align: center; padding:30px 15px; box-sizing:border-box; }
 #footer h2 { font-family: bebas; text-decoration: underline; color:white; padding-bottom: 10px;}
@@ -130,12 +130,19 @@ hr { width:10%; height:8px; background:#456770; border:0; margin: 0 auto;}
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-
+@media only screen and (max-width: 480px) {
+    #contact-icons { margin-bottom: 0; }
+    #contact-icons .icons { padding:0 0 50px; display: block;}
+    #content hr { margin:30px auto; }
 }
 
 @media only screen and (max-width: 768px) {
-    
+    #form-container { padding: 5px; }
+    #form-container .formbox .form-intro { width: 100%; height:auto; float:none; text-align: left; padding:0 20px 50px 0; box-sizing:border-box; }
+    #form-container .formbox form { width:100%; height:auto; float:none; text-align: left; padding-left: 0; box-sizing:border-box; border-left:none; }
+    #form-container .formbox form input[type=text],input[type=email] { width:100%; }
+    #form-container .formbox form textarea { width:100%; }
+    #form-container .formbox form input[type=submit] { margin:30px 0 0 0; float:right; }
 }
 
 @media only screen and (max-width: 1140px) {

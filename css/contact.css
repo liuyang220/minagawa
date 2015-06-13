@@ -65,7 +65,7 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial; background: #40606b;
 }
 
-@font-face { font-family: gothamMed; src: url(../fonts/Gotham-Medium.otf); }
+@font-face { font-family:gothamMed; src: url(../fonts/Gotham-Medium.otf); }
 @font-face { font-family:gothamBlack; src: url(../fonts/Gotham-Black.otf); }
 @font-face { font-family:gothamMedItalic; src: url(../fonts/Gotham-MediumItalic.otf); }
 @font-face { font-family:gothamLightItalic; src: url(../fonts/Gotham-LightItalic.otf); }
@@ -73,6 +73,8 @@ body {
 @font-face { font-family:gothamBookItalic; src: url(../fonts/Gotham-BookItalic.otf); }
 @font-face { font-family:bebas; src: url(../fonts/BebasNeue.otf); }
 @font-face { font-family:gothamXLight; src: url(../fonts/Gotham-XLight.otf); }
+@font-face { font-family:gothamLight; src: url(../fonts/Gotham-Light.otf); }
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -100,8 +102,13 @@ body {
 #container > h1 { text-align: center; font-family: gothamBlack; font-size: 60px; color:#456770; line-height: 50px; text-transform: uppercase; padding:0; margin:20px;}
 hr { width:10%; height:8px; background:#456770; border:0; margin: 0 auto;}
 #content { text-align: center; margin-top:20px; padding:0 15px; }
-#content p { color:white; font-family: KozGoPro; font-size:24px; text-shadow: 3px 0px 0px rgba(0, 0, 0, 1); line-height: 20px; margin-bottom:200px;}
+#content p { color:white; font-family: KozGoPro; font-size:24px; text-shadow: 3px 0px 0px rgba(0, 0, 0, 1); line-height: 20px; margin-bottom:50px;}
 #content hr { width:20%; height:10px; background:#456770; border:0; margin:30px auto 100px; }
+#contact-icons { width:100%; height:auto; margin-bottom: 80px; }
+#contact-icons .icons { padding:0 20px; display: inline-block; text-align: center; }
+#contact-icons .icons h5 { font-family: gothamLight; text-transform: uppercase; color:#858b8e; margin:10px 0; font-size: 15px;}
+#contact-icons .icons a,div { color:white; font-family: gothamLight; text-decoration: none; }
+
 
 #footer { width:100%; height:auto; background: #231f20; text-align: center; padding:30px 15px; box-sizing:border-box; }
 #footer h2 { font-family: bebas; text-decoration: underline; color:white; padding-bottom: 10px;}

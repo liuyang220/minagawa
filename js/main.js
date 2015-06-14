@@ -4,6 +4,5 @@ document.querySelector( "#nav-toggle" )
 	$("#menu").toggle();
 	$("body").toggleClass("toggleClass-whiteBackground");
 	$("#logo").toggle();
-
-	$("h1,hr,#content,#footer").toggle();	/*about me*/
+	$("h1,hr,#content,#footer").toggle();
   });

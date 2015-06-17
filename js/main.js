@@ -6,3 +6,27 @@ document.querySelector( "#nav-toggle" )
 	$("#logo").toggle();
 	$("h1,hr,#content,#footer").toggle();
   });
+
+  var select = function() {
+  	$('.all').click(function() {
+  		$('.projects-branding, .projects-print, .projects-motion, .projects-web').show();
+  	});
+
+  	$('.branding').click(function() {
+  		$('.projects-web, .projects-print, .projects-motion').hide();
+  	});
+
+  	$('.web').click(function() {
+  		$('.projects-branding, .projects-print, .projects-motion').hide();
+  	});
+
+  	$('.print').click(function() {
+  		$('.projects-branding, .projects-web, .projects-motion').hide();
+  	});
+
+	$('.motion').click(function() {
+	  		$('.projects-branding, .projects-print, .projects-web').hide();
+	  	});
+  };
+
+  $(document).ready(select);
